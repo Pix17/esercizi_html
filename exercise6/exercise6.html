@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+    Esercizio - Attributi
+Aggiungi alla pagina:
+-   Un pulsante disabilitato
+-   Un input numerico, con relativa label, nel range 0-100 e con step di 2
+-   Una checkbox con relativa label
+-   Un input per date con una proprietà custom
+La checkbox deve essere già selezionata all'apertura della pagina. L'input numerico deve avere il focus all'apertura della pagina.
+-->
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Develhope exercise 6</title>
+</head>
+<body>
+    
+    <label for="age"><span>Età:</span></label>
+    <input type="number" name="age" id="age" step="2" min="0" max="100" autofocus>
+    <br>
+    <label for="data"><span>Valido fino al:</span></label>
+    <input type="date" name="data" id="data" min="2021-07-12" max="2099-01-01">
+    <br>
+    <label for="termini">Ho letto i termini e condizioni</label>
+    <input type="checkbox" name="termini" id="termini" value="accettato" checked>
+    <button type="#">Prosegui</button>
+</body>
+</html>

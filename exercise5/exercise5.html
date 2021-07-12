@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+    Esercizio - Conversione
+   Converti le immagini di questa pagina per supportare un formato di fallback in caso webp non sia supportato. 
+-->
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Develhope exercise 5</title>
+</head>
+<body>
+    <figure>
+        <picture>    
+            <source srcset="img/house.webp" type="image/webp"/>
+            <source srcset="img/house.jpg" type="image/jpg"/>
+            <img src="img/house.jpg" alt="Una casa panna immersa nel verde" width="800">
+        </picture>    
+    </figure>
+    <figcaption>Una casa panna immersa nel verde</figcaption>
+
+    <figure>
+        <picture>    
+            <source srcset="img/lake.webp" type="image/webp"/>
+            <source srcset="img/lake.jpg" type="image/jpg"/>
+            <img src="img/lake.jpg" alt="Un lago in un tramonto nuvoloso" width="800">
+
+        </picture>    
+    </figure>
+    <figcaption>Un lago in un tramonto nuvoloso</figcaption>
+</body>
+</html>

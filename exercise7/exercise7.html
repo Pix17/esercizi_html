@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+    Esercizio - Form
+Crea un form di anagrafica per la registrazione ad un piattaforma.
+Il form deve contenere i seguenti campi:
+-   Email
+-   Password
+-   Nome e Cognome
+-   Data di nascita
+-   Numero di telefono
+-   Selettore con scelta di un piano di abbonamento.
+    -   Un piano free
+    -   Un gruppo di massimo 3 piani con prezzo crescente
+-   Un campo per scegliere se aggiungere o meno i vantaggi PRO
+-   Campi per inserimento carta di scredito
+    -   Numero carta
+    -   CVC
+    -   Scadenza
+-   Indirizzo di fatturazione
+-->
+
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Develhope exercise 7</title>
+</head>
+<body>
+    <header>
+        <h1>Sing up!</h1>
+    </header>
+    <main>
+        <div style="width: 20%;">
+            <form action="index.php" method="post" align=right>
+                <label for="email"><abbr title="obbligatorio">*</abbr><span>e-mail:</span></label>
+                    <input type="email" name="email" id="email" required> <br>
+                <label for="psw"><abbr title="obbligatorio">*</abbr><span>Password:</span></label>
+                    <input type="password" name="psw" id="psw" required> <br>
+                <label for="nome"><span>Nome:</span></label>
+                    <input type="text" name="nome" id="nome"> <br>
+                <label for="cognome"><span>Cognome:</span></label>
+                    <input type="text" name="cognome" id="cognome"> <br>
+                <label for="data"><span>Data di nascita:</span></label>
+                    <input type="date" name="data" id="data" min="1900-01-01" max="2003-07-12"> <br>
+                <label for="cell"><span>Telefono:</span></label>
+                    <input type="number" name="cell" id="cell" minlength="9" maxlength="11"> <br>
+                <label for="premium"><span>Scegli un piano in abbonamento:</span></label>
+                <select name="premium" id="premium">
+                    <optgroup label="Free">
+                        <option value="free">Try for free!</option>
+                    </optgroup>
+                    <optgroup label="Premium">
+                        <option value="bronze">Get Bronze plan</option>
+                        <option value="silver">Get Silver plan</option>
+                        <option value="gold" selected>Get Gold Premium! Be a master!</option>
+                    </optgroup>
+                </select> <br>
+                <label for="vip">Add Vip Feature</label>
+                    <input type="checkbox" id="vip" name="vip" checked><br>
+                <br><hr>
+                <h3>Inserisci dati di fatturazione</h3>
+                <label for="ncarta"><span>Numero carta:</span></label>
+                    <input type="number" id="ncarta" name="ncarta" maxlength="16" minlength="16"><br>
+                <label for="cvc"><span>CVC:</span></label>
+                    <input type="number" id="cvc" name="cvc" maxlength="3" minlength="3"><br>
+                <label for="scadenza"><span>Scadenza:</span></label>
+                    <input type="month" id="scadenza" name="scadenza" min="2021-07"><br>
+                <label for="fatturazione"><span>Indirizzo di fatturazione:</span></label>
+                    <input type="text" id="fatturazione" name="fatturazione"><br>
+                <button type="submit">Sing up!</button>
+            </form>
+        </div>
+    </main>    
+</body>
+</html>
