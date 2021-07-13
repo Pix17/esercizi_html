@@ -6,34 +6,42 @@ Dato il form di partenza validare i campi tale che:
 -   I campi relativi a numero carta di credito e CVC devono avere una prima validazione sulla lunghezza e la correttezza dei valori.
 -->
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/GCicon.ico" type="image/x-icon">
-	<meta name="author" content="Giuseppe Capicotto">
+    <meta name="author" content="Giuseppe Capicotto">
     <title>Develhope exercise 8</title>
 </head>
+
 <body>
     <header>
         <h1>Sing up!</h1>
     </header>
     <main>
         <div style="width: 20%;">
-            <form action="index.php" method="post" align=right>
-                <label for="email"><abbr title="obbligatorio">*</abbr><span>e-mail:</span></label>
-                    <input type="email" name="email" id="email" required> <br>
-                <label for="psw"><abbr title="obbligatorio">*</abbr><span>Password:</span></label>
-                    <input type="password" name="psw" id="psw" required> <br>
-                <label for="nome"><abbr title="obbligatorio">*</abbr><span>Nome:</span></label>
-                    <input type="text" name="nome" id="nome" required> <br>
-                <label for="cognome"><abbr title="obbligatorio">*</abbr><span>Cognome:</span></label>
-                    <input type="text" name="cognome" id="cognome" required> <br>
-                <label for="data"><abbr title="obbligatorio">*</abbr><span>Data di nascita:</span></label>
-                    <input type="date" name="data" id="data" min="1900-01-01" max="2003-07-12" required> <br>
-                <label for="cell"><abbr title="obbligatorio">*</abbr><span>Telefono:</span></label>
-                    <input type="number" name="cell" id="cell" minlength="9" maxlength="11" required> <br>
-                <label for="premium"><span>Scegli un piano in abbonamento:</span></label>
+            <form action="index.php" method="post">
+                <label for="email"><abbr title="obbligatorio">*</abbr>e-mail:</label>
+                <input type="email" name="email" id="email" required> <br>
+
+                <label for="psw"><abbr title="obbligatorio">*</abbr>Password:</label>
+                <input type="password" name="psw" id="psw" required> <br>
+
+                <label for="nome"><abbr title="obbligatorio">*</abbr>Nome:</label>
+                <input type="text" name="nome" id="nome" required> <br>
+
+                <label for="cognome"><abbr title="obbligatorio">*</abbr>Cognome:</label>
+                <input type="text" name="cognome" id="cognome" required> <br>
+
+                <label for="data"><abbr title="obbligatorio">*</abbr>Data di nascita:</label>
+                <input type="date" name="data" id="data" min="1900-01-01" max="2003-07-12" required> <br>
+
+                <label for="cell"><abbr title="obbligatorio">*</abbr>Telefono:</label>
+                <input type="number" name="cell" id="cell" minlength="9" maxlength="11" required> <br>
+
+                <label for="premium">Scegli un piano in abbonamento:</label>
                 <select name="premium" id="premium">
                     <optgroup label="Free">
                         <option value="free">Try for free!</option>
@@ -41,25 +49,33 @@ Dato il form di partenza validare i campi tale che:
                     <optgroup label="Premium">
                         <option value="bronze">Get Bronze plan</option>
                         <option value="silver">Get Silver plan</option>
-
                         <option value="gold" selected>Get Gold Premium!</option>
                     </optgroup>
                 </select> <br>
+
                 <label for="vip">Add PRO Feature</label>
-                    <input type="checkbox" id="vip" name="vip" checked><br>
-                <br><hr>
+                <input type="checkbox" id="vip" name="vip" checked><br>
+
+                <br>
+                <hr>
+
                 <h3>Inserisci dati di fatturazione</h3>
-                <label for="ncarta"><abbr title="obbligatorio">*</abbr><span>Numero carta:</span></label>
-                    <input type="number" id="ncarta" name="ncarta" maxlength="16" minlength="16" required><br>
-                <label for="cvc"><abbr title="obbligatorio">*</abbr><span>CVC:</span></label>
-                    <input type="number" id="cvc" name="cvc" maxlength="3" minlength="3" required><br>
-                <label for="scadenza"><abbr title="obbligatorio">*</abbr><span>Scadenza:</span></label>
-                    <input type="month" id="scadenza" name="scadenza" min="2021-07" required><br>
-                <label for="fatturazione"><abbr title="obbligatorio">*</abbr><span>Indirizzo di fatturazione:</span></label>
-                    <input type="text" id="fatturazione" name="fatturazione" required><br>
+                <label for="ncarta"><abbr title="obbligatorio">*</abbr>Numero carta:</label>
+                <input type="number" id="ncarta" name="ncarta" maxlength="16" minlength="16" required><br>
+
+                <label for="cvc"><abbr title="obbligatorio">*</abbr>CVC:</label>
+                <input type="number" id="cvc" name="cvc" maxlength="3" minlength="3" required><br>
+
+                <label for="scadenza"><abbr title="obbligatorio">*</abbr>Scadenza:</label>
+                <input type="month" id="scadenza" name="scadenza" min="2021-07" required><br>
+
+                <label for="fatturazione"><abbr title="obbligatorio">*</abbr>Indirizzo di fatturazione:</label>
+                <input type="text" id="fatturazione" name="fatturazione" required><br>
+
                 <button type="submit">Sing up!</button>
             </form>
         </div>
-    </main>    
+    </main>
 </body>
+
 </html>
