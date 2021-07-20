@@ -37,10 +37,10 @@ Il form deve contenere i seguenti campi:
     <main>
         <div style="width: 20%;">
             <form action="index.php" method="post">
-                <label for="email"><abbr title="obbligatorio">*</abbr>e-mail:</label>
+                <label for="email"><span title="obbligatorio">*</span>e-mail:</label>
                 <input type="email" name="email" id="email" required> <br>
 
-                <label for="psw"><abbr title="obbligatorio">*</abbr>Password:</label>
+                <label for="psw"><span title="obbligatorio">*</span>Password:</label>
                 <input type="password" name="psw" id="psw" required> <br>
 
                 <label for="nome">Nome:</label>
@@ -53,7 +53,7 @@ Il form deve contenere i seguenti campi:
                 <input type="date" name="data" id="data" min="1900-01-01" max="2003-07-12"> <br>
 
                 <label for="cell">Telefono:</label>
-                <input type="number" name="cell" id="cell" minlength="9" maxlength="11"> <br>
+                <input type="tel" name="cell" id="cell" minlength="9" maxlength="11"> <br>
 
                 <label for="premium">Scegli un piano in abbonamento:</label>
                 <select name="premium" id="premium">
@@ -76,10 +76,10 @@ Il form deve contenere i seguenti campi:
                 <h3>Inserisci dati di fatturazione</h3>
 
                 <label for="ncarta">Numero carta:</label>
-                <input type="number" id="ncarta" name="ncarta" maxlength="16" minlength="16"><br>
+                <input type="tel" id="ncarta" name="ncarta" maxlength="16" minlength="16"><br>
 
                 <label for="cvc">CVC:</label>
-                <input type="number" id="cvc" name="cvc" maxlength="3" minlength="3"><br>
+                <input type="tel" id="cvc" name="cvc" maxlength="3" minlength="3"><br>
 
                 <label for="scadenza">Scadenza:</label>
                 <input type="month" id="scadenza" name="scadenza" min="2021-07"><br>
